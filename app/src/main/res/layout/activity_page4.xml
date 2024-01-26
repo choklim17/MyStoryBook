@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Page4">
+
+    <TextView
+        android:id="@+id/txtEducation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Educational Background"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtEducationStory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEducation"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Story Goes Here"
+        android:textSize="15sp" />
+
+
+    <ImageView
+        android:id="@+id/imgDonBosco"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/txtEducationStory"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/dbtc_pic" />
+
+    <ImageView
+        android:id="@+id/imgNationalU"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/txtEducationStory"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/nu_logo" />
+
+    <TextView
+        android:id="@+id/txtWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgDonBosco"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Visit their website by clicking the image"
+        android:textColor="#3498db"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btnPrevious3"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="goToThirdPage"
+        android:text="Previous" />
+
+    <TextView
+        android:id="@+id/txtPage4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="Page 4"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btnFifthPage"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="goToFifthPage"
+        android:text="Next" />
+
+</RelativeLayout>

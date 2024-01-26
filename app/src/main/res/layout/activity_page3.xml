@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Page3">
+
+    <TextView
+        android:id="@+id/txtPersonalInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Personal Information"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgProfilePic2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/txtPersonalInformation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/pi_pic" />
+
+    <TextView
+        android:id="@+id/txtPersonalStory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgProfilePic2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Story Goes Here"
+        android:textSize="15sp" />
+
+
+    <Button
+        android:id="@+id/btnPrevious2"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="goToSecondPage"
+        android:text="Previous" />
+
+    <TextView
+        android:id="@+id/txtPage3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="Page 3"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btnFourthPage"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="goToFourthPage"
+        android:text="Next" />
+
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Page11">
+
+    <TextView
+        android:id="@+id/txtThanks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Thank You For Visiting!"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgIcon"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/txtThanks"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/my_icon" />
+
+    <TextView
+        android:id="@+id/txtCredits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgIcon"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="Credit Message Goes Here"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+
+    <TextView
+        android:id="@+id/txtOwner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:text="Developed by Christopher Lim - 2024"
+        android:textSize="15sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/btnPrevious10"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="goToTenthPage"
+        android:text="Previous" />
+
+
+    <TextView
+        android:id="@+id/txtPage11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="Page 11"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="exitApp"
+        android:text="Exit" />
+
+</RelativeLayout>

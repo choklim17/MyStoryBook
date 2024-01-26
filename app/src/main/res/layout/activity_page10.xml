@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Page10">
+
+    <TextView
+        android:id="@+id/txtConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Connect With Me"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgGHProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/txtConnect"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/github_icon" />
+
+    <ImageView
+        android:id="@+id/imgLinkedIn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/txtConnect"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/linkedin_logo" />
+
+    <ImageView
+        android:id="@+id/imgGmail"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/imgGHProfile"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/gmail_icon" />
+
+    <ImageView
+        android:id="@+id/imgSMS"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/imgLinkedIn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/sms_icon" />
+
+    <Button
+        android:id="@+id/btnPrevious9"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="goToNinthPage"
+        android:text="Previous" />
+
+    <TextView
+        android:id="@+id/txtPage10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="Page 10"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btnEleventhPage"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="goToEleventhPage"
+        android:text="Next" />
+
+</RelativeLayout>

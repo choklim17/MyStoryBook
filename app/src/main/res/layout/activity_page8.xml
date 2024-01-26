@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Page8">
+
+    <TextView
+        android:id="@+id/txtHobbies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Hobbies"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgDota"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/txtHobbies"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/dota2_logo" />
+
+    <ImageView
+        android:id="@+id/imgCoding"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/imgDota"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/coding_pic" />
+
+    <ImageView
+        android:id="@+id/imgSleep"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/imgCoding"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/sleeping_pic" />
+
+    <TextView
+        android:id="@+id/txtCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgSleep"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Text Goes Here"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btnPrevious7"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="goToSeventhPage"
+        android:text="Previous" />
+
+
+    <TextView
+        android:id="@+id/txtPage7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="Page 8"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btnNinthPage"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="goToNinthPage"
+        android:text="Next" />
+
+</RelativeLayout>

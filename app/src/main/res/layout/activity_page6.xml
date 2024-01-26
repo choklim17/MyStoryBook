@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Page6">
+
+    <TextView
+        android:id="@+id/txtTechnologies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Technologies"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtLearning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTechnologies"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Learning/Exploring:"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgJava"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/txtLearning"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/java_logo" />
+
+    <ImageView
+        android:id="@+id/imgGit"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/txtLearning"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/git_logo" />
+
+    <ImageView
+        android:id="@+id/imgGitHub"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/imgJava"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/github_icon" />
+
+    <ImageView
+        android:id="@+id/imgAndroid"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/imgGit"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/android_icon" />
+
+    <ImageView
+        android:id="@+id/imgHTMLCSS"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/imgGitHub"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/css_html_icon" />
+
+    <Button
+        android:id="@+id/btnPrevious5"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="goToFifthPage"
+        android:text="Previous" />
+
+    <TextView
+        android:id="@+id/txtPage6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="Page 6"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btnSeventhPage"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="goToSeventhPage"
+        android:text="Next" />
+
+</RelativeLayout>

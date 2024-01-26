@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Page7">
+
+    <TextView
+        android:id="@+id/txtProjects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Projects"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtProjectsIntroduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtProjects"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Story Goes Here"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtJava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtProjectsIntroduction"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Java:"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtJavaProjects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtJava"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="- Java Projects Goes Here"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtHTML"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtJavaProjects"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="HTML and CSS:"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtHTMLProjects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHTML"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="- HTML Projects Goes Here"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtAndroid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHTMLProjects"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Android:"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtAndroidProjects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAndroid"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="- Android Projects Goes Here"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnPrevious6"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="goToSixthPage"
+        android:text="Previous" />
+
+    <TextView
+        android:id="@+id/txtPage7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="Page 7"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btnEightPage"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="goToEightPage"
+        android:text="Next" />
+
+</RelativeLayout>
